@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grateful</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        
+        <section>
+            <h1>Solar States Presents: Community Wisdom</h1>
+            
+            <form id="memoryForm">
+                
+
+                <textarea id="memoryText" placeholder="Share your memory..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search......">
+        </div>
+        
+
+        <section>
+            <ul id="memoriesList">
+                <!-- Memories will be populated here with the format:
+                <li>
+                    [Memory Content]
+                    <button class="deleteBtn">🗑️</button>
+                </li>
+                -->
+            </ul>
+        </section>
+
+        <!-- Custom Modal -->
+        <div class="custom-modal" id="customModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <p id="modalMessage">AHOY! There be a problem here? We'll send minions to invade its space, and discern with sound mind how best to move fo-ward. Kindly!</p>
+            </div>
+        </div>
+
+    
+    </main>
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,359 @@
+/* Reset some default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em; /* Adjust size as needed */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000; /* Adds a shadow for depth */
+    color: #fec93d; /* Primary color */
+    background-color: black; /* Secondary color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #fec93d, #fdaa00, #fec93d, #fdaa00);
+    animation: gradientAnimation 10s infinite;
+    color: black; /* Secondary color for the main text */
+}
+
+
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+select, textarea, button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+select:focus, textarea:focus, button:focus {
+    outline: none;
+    transform: scale(1.05);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* Increase padding for larger boxes */
+    font-size: 1.2em; /* Increase font size for better readability */
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.emoji-actions {
+    float: right;
+    margin-left: 20px; /* Add some space between the memory text and the emojis */
+}
+
+/* Increase the size of the emojis for better visibility */
+.emoji {
+    font-size: 1.5em; /* Increase emoji size */
+    margin-left: 15px; /* Add some space between the emojis */
+    cursor: pointer;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+/* Google Font for beautiful typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Quotes Section Styles */
+.quotes-section {
+    font-family: 'Playfair Display', serif; /* Beautiful font for quotes */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.quote {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 30px auto; /* Centering the quote and giving space between quotes */
+    padding: 20px;
+    position: relative;
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700; /* Making the author's name bold */
+    font-style: italic; /* Styling the author's name */
+}
+
+/* Custom Modal Styles */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Black with opacity */
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* Removes default styling for Webkit browsers */
+    -moz-appearance: none; /* Removes default styling for Firefox */}
+
+
+    .board-toggle {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .board-toggle button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .board-toggle button.active {
+        background-color: #020000;
+    }
+    
+    .board {
+        display: none;
+    }
+    
+    .board.active {
+        display: block;
+    }
+    
+/* ... existing CSS ... */
+
+.deleteBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 10px;
+    transition: opacity 0.3s;
+}
+
+.deleteBtn:hover {
+    opacity: 0.7;
+}
+
+/* Progress Bar */
+/* Progress Bar */
+.footer-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    height: 60px; 
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3); 
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.link-container {
+    margin: 10px 0; /* Add some space above and below the links */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.link-container a {
+    color: #4CAF50; /* Color for the links, you can adjust as needed */
+    margin: 0 5px; /* Add some space between the links */
+    text-decoration: none; /* Remove the default underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.link-container a:hover {
+    color: #81C784; /* Slightly lighter color on hover */
+}
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 10px; /* Add some padding to the sides */
+}
+
+#searchBar {
+    padding: 10px;
+    width: 100%; /* Full width */
+    border: 1px solid #e0e0e0; /* Lighter border color */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fffdfd; /* Lighter background color */
+    transition: box-shadow 0.3s; /* Transition for a smooth effect on focus */
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 20 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on focus */
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-2px, 0px) rotate(1deg); }
+    30% { transform: translate(1px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-1px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake-animation {
+    animation: shake 0.3s;
+    animation-iteration-count: 1;
+}
+
+#memoriesList li {
+    transition: all 0.3s ease;
+}
+
+.glow {
+    transition: box-shadow 0.5s ease-in-out !important;
+    box-shadow: 0 0 20px #fec93d, 0 0 30px #fec93d !important;
+}
+
+.vote-count {
+    margin-right: 15px; /* Add some space between the vote count and the emojis */
+    font-weight: bold;
+    font-size: 1.2em; /* Increase font size for better readability */
+}
+
+/* Ensure the memory content doesn't overlap with the emojis */
+li strong, li .vote-count {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 70%; /* Limit the width to prevent overlap with the emojis */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display '...' for long sentences */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+}
